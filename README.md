@@ -10,7 +10,7 @@ This thumbnailer requires [OpenSCAD](https://openscad.org) as backend, once you 
 
 and restart Nautilus and then your .stl will show up rendered in the preview.
 
-## Acknowledgment
+## Acknowledgement
 
 This repo is based on [STL Thumbnailer](https://www.thingiverse.com/thing:258653/) with a few changes to make it easier to use.
 
