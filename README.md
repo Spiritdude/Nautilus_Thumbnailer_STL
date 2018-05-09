@@ -2,6 +2,12 @@
 
 This thumbnailer requires [OpenSCAD](https://openscad.org) as backend, once you installed it then
 
+## Download
+```
+% git clone https://github.com/Spiritdude/Nautilus_Thumbnailer_STL
+% cd Nautilus_Thumbnailer_STL
+```
+
 ## Install
 
 ```
