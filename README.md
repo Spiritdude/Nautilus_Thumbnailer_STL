@@ -4,6 +4,8 @@
 With newer GNOME Nautilus the thumbnail processes are "bwrap" (bubblewrap) and so the approach using OpenSCAD to render STL files no longer works. 
 As a remedy `stl2pov`, `stl2png.pl` and `povray` are required to do the same.
 
+![](https://raw.githubusercontent.com/Spiritdude/Nautilus_Thumbnailer_STL/master/imgs/screenshot.png)
+
 ## Requirements
 - install [stl2pov](https://github.com/timschmidt/stl2pov)
 - install PovRay `sudo apt install povray` and `(cd ~; ln -s /etc/povray/ .povray)`
