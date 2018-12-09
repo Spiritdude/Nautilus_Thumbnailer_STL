@@ -1,7 +1,7 @@
 # Nautilus STL Thumbnailer
 
 ~~This thumbnailer requires [OpenSCAD](https://openscad.org) as backend, once you installed it then~~ 
-With newer GNOME "bwrap" (bubblewrap) thumbnail processes, the approach using OpenSCAD to render STL files no longer works. 
+With newer GNOME Nautilus the thumbnail processes are "bwrap" (bubblewrap) and so the approach using OpenSCAD to render STL files no longer works. 
 As a remedy `stl2pov`, `stl2png.pl` and `povray` are required to do the same.
 
 ## Requirements
