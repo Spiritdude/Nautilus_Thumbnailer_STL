@@ -7,7 +7,7 @@ As a remedy `stl2pov`, `stl2png.pl` and `povray` are required to do the same.
 ![](https://raw.githubusercontent.com/Spiritdude/Nautilus_Thumbnailer_STL/master/imgs/screenshot.png)
 
 ## Requirements
-- install [stl2pov](https://github.com/timschmidt/stl2pov)
+- install [stl2pov](https://github.com/Spiritdude/stl2pov)
 - install PovRay `sudo apt install povray` and `(cd ~; ln -s /etc/povray/ .povray)`
 
 ## Download

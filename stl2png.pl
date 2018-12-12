@@ -23,7 +23,7 @@ if(fork()==0) {
    close STDOUT;
    close STDERR;
    open(STDOUT,">",$inc);
-   exec("stl2pov",$in);
+   exec("stl2pov","-n","sample",$in);
 }
 wait;
 
@@ -42,8 +42,8 @@ light_source {
 global_settings {
   assumed_gamma 2
 }
-#declare Min = min_extent(m_OpenSCAD_Model);
-#declare Max = max_extent(m_OpenSCAD_Model);
+#declare Min = min_extent(m_sample);
+#declare Max = max_extent(m_sample);
 #declare bottom_diag = sqrt(pow(Max.y - Min.y, 2) + pow(Max.x - Min.x, 2));
 #debug concat(\"bottom_diag:\", str(bottom_diag, 5, 0))
 #declare box_diag = sqrt(pow(bottom_diag, 2) + pow(Max.z - Min.z, 2));
@@ -67,8 +67,8 @@ sky_sphere {
   }
 }
 object {
-  m_OpenSCAD_Model
-  Center_Trans(m_OpenSCAD_Model, x+y+z)   
+  m_sample
+  Center_Trans(m_sample, x+y+z)   
   texture {
     pigment {color <1,1,0.2>}
     finish {phong 0.9 diffuse 1}
@@ -86,3 +86,9 @@ wait;
 unlink $inc;
 unlink $tmp;
 
+if(!-e $out) {
+   print STDERR "$0: conversion failed: $in -> $out\n";
+   exit -1;
+}
+
+exit 0;
