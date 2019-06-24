@@ -33,7 +33,7 @@ print $fh "#include \"$inc\"
 #include \"math.inc\"
 #include \"finish.inc\"
 #include \"transforms.inc\"
-background {color rgb 1}
+/*background {color rgb 1}*/
 light_source {
   <-500,500,400>
   rgb 1
@@ -55,6 +55,7 @@ camera {
   look_at <0,0,0>
   right x*$sz/$sz
 }
+/*
 sky_sphere {
   pigment {
   gradient y
@@ -66,6 +67,7 @@ sky_sphere {
   translate 1
   }
 }
+*/
 object {
   m_sample
   Center_Trans(m_sample, x+y+z)   
