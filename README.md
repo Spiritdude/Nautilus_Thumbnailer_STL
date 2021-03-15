@@ -28,3 +28,6 @@ and restart Nautilus and then your .stl will show up rendered in the preview.
 
 This repo is based on [STL Thumbnailer](https://www.thingiverse.com/thing:258653/) with a few changes to make it easier to use.
 
+## See Also
+-[GCode Thumbmailer](https://github.com/Spiritdude/Nautilus_Thumbnailer_GCode)
+
